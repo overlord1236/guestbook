@@ -48,7 +48,7 @@
 				<tr>
 						<td colspan="4" id="getMore">Загрузить еще</td>
 				
-				
+				<!-- new -->
 
 				</tr>
 				
