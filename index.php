@@ -12,7 +12,7 @@
 
 	<div class="wrapper" id="wrapper">
 		<div class="messageFormWrapper" id="messageFormWrapper">
-			<form method="POST" action="php/script.php" id="messageForm">
+			<form method="POST" action="php/form.php" id="messageForm">
 				<input type="text" name="userName" placeholder="Name" class="input"><br>
 				<input type="email" name="email"  placeholder="e-mail" class="input"><br>
 				<input type="text" name="homepage"  placeholder="My site" class="input"><br>
