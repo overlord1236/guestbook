@@ -31,14 +31,11 @@
 				
 				$result_array[]=$response;
 
-				//$output_string .= "<tr><td>{$row['name']}</td><td>{$row['email']}</td><td>{$row['date']}</td><td>{$row['message']}</td></tr>";
-
 			}
 
 
 	}
 	mysql_close();
-	//echo (print_r($result_array));
 	echo json_encode($result_array);
 
 			
