@@ -4,7 +4,7 @@
 
 	$from = 0;
 	$records_on_page = 11;
-	$result = mysql_query("SELECT * FROM messages ORDER BY id DESC LIMIT $from, $records_on_page");
+	$result = mysql_query("SELECT name, email, DATE_FORMAT(`date`, '%d.%m.%Y %H:%i') AS formated_date, message FROM messages ORDER BY id DESC LIMIT $from, $records_on_page");
 	$output_string = "";
 
 	$result_array = array();
@@ -26,7 +26,7 @@
 				$response = new Response;
 				$response->name = $row['name'];
 				$response->email = $row['email'];
-				$response->date = $row['date'];
+				$response->date = $row['formated_date'];
 				$response->message = $row['message'];
 				
 				$result_array[]=$response;

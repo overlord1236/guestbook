@@ -17,7 +17,6 @@
 				<input type="email" name="email"  placeholder="e-mail" class="input"><br>
 				<input type="text" name="homepage"  placeholder="My site" class="input"><br>
 				<textarea name="userMessage" id="userMessage"  placeholder="My message" class="input"></textarea><br>
-				<!-- <input type="hidden" name="date" value="<?php echo date('Y-m-d') ?>"> -->
 				<button type="submit" name="send">Send</button>
 			</form>
 		</div>

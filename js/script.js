@@ -8,7 +8,7 @@ loadTable();
 document.getElementById('messageForm').addEventListener('submit', function(evt){
   var http = new XMLHttpRequest(), f = this;
   evt.preventDefault();
-  http.open("POST", "../php/script.php", true);
+  http.open("POST", "../php/form.php", true);
   http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   http.send("userName=" + f.userName.value + "&email=" + f.email.value + "&homepage=" + f.homepage.value + "&userMessage=" + f.userMessage.value);
   http.onreadystatechange = function() {
@@ -25,7 +25,7 @@ document.getElementById('messageForm').addEventListener('submit', function(evt){
       setTimeout(function(){
         successBlock.style.display = 'none';
       }, 3000);
-     // loadTable();
+     
     	f.reset();   	
     }
   }
