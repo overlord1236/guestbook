@@ -38,17 +38,9 @@
 						</tr>
 					</th>
 				</thead>
-				<tbody id="tableBody">
-
-					
-
-					
-				</tbody>
+				<tbody id="tableBody"></tbody>
 				<tr>
 						<td colspan="4" id="getMore">Загрузить еще</td>
-				
-				<!-- new -->
-
 				</tr>
 				
 			</table>
