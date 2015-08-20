@@ -9,6 +9,7 @@
 	function clear_data($name){
 		return htmlspecialchars(strip_tags(trim($name)));
 	}
+	
 	$backurl = "http://ghostbook.ru/";
 
 	$userName = clear_data($_POST['userName']);
