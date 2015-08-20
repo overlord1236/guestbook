@@ -6,9 +6,9 @@ document.getElementById('messageFormWrapper').style.display = "none";
 
 
 // Отправка данных формы, смена формы на блок
-var a = 0;
-var b = 4;
-loadTable(a,b);
+var from = 0;
+var recordOnPage = 4;
+loadTable(from,recordOnPage);
 getRows();
 
 
@@ -42,18 +42,28 @@ document.getElementById('messageForm').addEventListener('submit', function(evt){
 }, false);
 
 
+function remoteGetMore(){
+  document.getElementById('getMore').style.display = 'none';
+}
+
+
+
+
+
+
 
 document.getElementById('getMore').addEventListener('click', function(){
+ 
+      if (from>=22){
+          remoteGetMore();
+      }
+      else{
 
-  a += b;
+            loadTable(from,recordOnPage);
+            from += recordOnPage;
+      }
 
-  if (a>=22){
-    document.getElementById('getMore').style.display = "none";
-  }
-  else{
-    loadTable(a,b);
-  }
-  
+ 
 
 }, false);
 
