@@ -29,6 +29,61 @@
 	echo 'Note has been added';
 
 
+	//$record = new Record($row['name'],  $row['email'], $row['formated_date'], $row['message']);
+
+
+
+	class Record{
+
+
+		private $name;
+		private $email;
+		private $homepage;
+		private $message;
+		private $date;
+		private $ip;
+
+
+		public function __construct($name, $email, $homepage, $message, $date, $ip)
+	    {
+	        $this->name = $name;
+	        $this->email = $email;
+	        $this->homepage = $homepage;
+	        $this->message = $message;
+	        $this->date = $date;
+	        $this->ip = $ip;
+	    } 
+
+
+	    function getName(){
+	    	return $this->name;
+	    }
+
+
+	    function getEmail(){
+	    	return $this->email;
+	    }
+
+
+	    function getHomepage(){
+	    	return $this->homepage;
+	    }
+
+	    function getMessage(){
+	    	return $this->message;
+	    }
+
+	    function getDate(){
+	    	return $this->date;
+	    }
+
+
+	    function getIp(){
+	    	return $this->ip;
+	    }
+
+	}
+
 
 
  ?>

@@ -86,9 +86,9 @@ function loadTable(from, recordOnPage){
       var tableRows = document.getElementById('getMore');
       var data = eval("("+http.responseText+")");
       data.forEach(function(item,i,data){
-        var tr =  document.createElement('tr');
-        tr.innerHTML = "<td>"+data[i].name+"</td>"+"<td>"+data[i].email+"</td>"+"<td>"+data[i].date+"</td>"+"<td>"+data[i].message+"</td>";
-        tableContent.appendChild(tr);
+      var tr =  document.createElement('tr');
+      tr.innerHTML = "<td>"+data[i].name+"</td>"+"<td>"+data[i].email+"</td>"+"<td>"+data[i].date+"</td>"+"<td>"+data[i].message+"</td>";
+      tableContent.appendChild(tr);
         
       }); 
     }
@@ -112,7 +112,7 @@ function getRows(){
   http.onreadystatechange = function() {
     if (http.readyState == 4 && http.status == 200) {
        var maxRows = eval("("+http.responseText+")");
-       console.log(maxRows);
+
     }
   }
 
